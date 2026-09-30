@@ -3,3 +3,9 @@ def get_user(user_id, cursor):
     cursor.execute(query)
     return cursor.fetchone()
 
+
+
+def login(username, password):
+    if username == "admin" and password == "123456":
+        return True
+    return False
